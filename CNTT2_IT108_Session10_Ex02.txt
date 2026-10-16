@@ -1,0 +1,33 @@
+## Bài 2: Chuẩn hóa tài liệu cài đặt hệ thống
+### Phần 1: Báo cáo phân tích (Input / Output)
+* **Input (Văn bản thô Markdown)**:
+* Sử dụng các cú pháp: Code block ````python`, Inline Code ```, Bảng `|...|`, Task List `- [x]` và ký tự Escape `\`.
+* **Output (Giao diện Render)**:
+* Khối mã Python có tô màu cú pháp (Syntax Highlighting).
+* Các câu lệnh/tên biến ngắn được làm nổi bật dạng hộp màu xám `inline`.
+* Bảng so sánh 2 loại cảm biến trực quan, căn chỉnh ngay ngắn.
+* Danh sách công việc có ô tích (checkbox) rõ ràng.
+
+### Phần 2: Source code Markdown đầy đủ (`.md`)
+# Hướng dẫn cài đặt cảm biến độ ẩm cho trang trại Lan
+Để chạy hệ thống, bạn cần sử dụng câu lệnh `python main.py` trong Terminal.
+## 1. Mã điều khiển máy bơm (Python)
+import time
+def control_pump(moisture_level):
+    if moisture_level < 30:
+        print("Bật máy bơm...")
+    else:
+        print("Tắt máy bơm...")
+
+## 2. Bảng so sánh cảm biến
+| Tiêu chí | Cảm biến loại cũ | Cảm biến loại mới |
+| :--- | :--- | :--- |
+| Độ chính xác | 80\% | 98\% |
+| Cú pháp ký tự | Sử dụng ký tự \# | Không dùng ký tự \# |
+| Giá thành | Thấp | Trung bình |
+
+## 3. Danh sách kiểm tra thiết bị (Task List)
+- [x] Kiểm tra nguồn điện 12V
+- [x] Kết nối cảm biến độ ẩm vào chân A0
+- [ ] Chạy thử nghiệm đoạn mã điều khiển
+
